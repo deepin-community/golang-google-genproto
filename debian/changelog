@@ -1,3 +1,9 @@
+golang-google-genproto (0.0~git20200413.b5235f6-3deepin1) unstable; urgency=medium
+
+  * Update dependency to golang-github-golang-protobuf-1-5-dev
+
+ -- xiangzelong <xiangzelong@deepin.org>  Thu, 25 Jan 2024 13:57:50 +0800
+
 golang-google-genproto (0.0~git20200413.b5235f6-3) unstable; urgency=medium
 
   * Team upload.
