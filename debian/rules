@@ -1,4 +1,16 @@
 #!/usr/bin/make -f
 
+BUILDDIR := $(CURDIR)/build
+PACKAGES := $(shell find googleapis protobuf -name '*.proto' \
+    -exec dirname {} \; | sort -u)
+
 %:
-	dh $@
+	dh $@ --buildsystem=golang --with=golang --builddirectory=$(BUILDDIR)
+
+override_dh_auto_configure:
+	dh_auto_configure
+	set -e; \
+        cd $(BUILDDIR)/src; \
+	for dir in $(PACKAGES); do \
+	    protoc --go_out=plugins=grpc:. google.golang.org/genproto/$$dir/*.proto; \
+	done
