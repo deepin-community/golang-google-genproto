@@ -1,3 +1,29 @@
+golang-google-genproto (0.0~git20210726.e7812ac-4) unstable; urgency=medium
+
+  * Team upload
+  * Upload changes from experimental to unstable
+  * Update Standards-Version to 4.7.0 in d/control (no changes needed)
+
+ -- Mathias Gibbens <gibmat@debian.org>  Thu, 25 Jul 2024 06:19:43 +0000
+
+golang-google-genproto (0.0~git20210726.e7812ac-3) experimental; urgency=medium
+
+  * Team Upload
+  * simplify packaging: drop dependency on protobuf compiler. Since no
+    .proto files are included, there is nothing to regenerate
+  * debian/control: Normalize with wrap-and-sort
+  * Bump Standards version to 4.6.2, no changes needed
+
+ -- Reinhard Tartler <siretart@tauware.de>  Sat, 22 Jun 2024 12:14:03 -0400
+
+golang-google-genproto (0.0~git20210726.e7812ac-2) experimental; urgency=medium
+
+  * Team upload.
+  * compile against gh:golang/protobuf v1.5, Closes: #1026222
+  * update section name to golang
+
+ -- Reinhard Tartler <siretart@tauware.de>  Fri, 31 May 2024 09:00:30 -0400
+
 golang-google-genproto (0.0~git20200413.b5235f6-3) unstable; urgency=medium
 
   * Team upload.
@@ -15,6 +41,22 @@ golang-google-genproto (0.0~git20200413.b5235f6-2) unstable; urgency=medium
   * Add Multi-Arch hint
 
  -- Shengjing Zhu <zhsj@debian.org>  Fri, 23 Dec 2022 00:36:14 +0800
+
+golang-google-genproto (0.0~git20210726.e7812ac-1~exp0) experimental; urgency=medium
+
+  * Team upload.
+
+  [ Balint Reczey ]
+  * New upstream snapshot 0.0~git20200626.ee7919e
+  * debian/control: Build depend on golang-google-protobuf-dev (>= 1.23.0-1~)
+  * Bump build dependency on golang-goprotobuf-dev to (>= 1.4.1~)
+  * Update dependency versions
+
+  [ Peymaneh Nejad ]
+  * New upstream snapshot 0.0~git20210726.e7812ac
+  * Update d/control (Closes: #991254)
+
+ -- Peymaneh Nejad <p.nejad@posteo.de>  Sun, 18 Jul 2021 20:27:34 +0200
 
 golang-google-genproto (0.0~git20200413.b5235f6-1) unstable; urgency=medium
 
